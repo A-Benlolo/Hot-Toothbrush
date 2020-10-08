@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+/***************/
+/* Page Styles */
+/***************/
+body {
+    margin: 0;
+    background: #222222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+}
+
+a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #bd3232;
+    }
+
+.projectContainer {
+    background: #333333;
+    outline: solid black;
+    margin: 10px;
+    padding: 5px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+/*******************/
+/* Pictures Styles */
+/*******************/
+.logo {
+    float: left;
+    padding: 10px 0
+}
+
+.gridImage {
+    max-width: 600px;
+    border: 3px solid #000;
+}
+
+/*********************/
+/* Text Styles*/
+/*********************/
+.titleText {
+    color: #bd3232;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+.subTitleText {
+    color: #bd3232;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.storyText {
+    color: #ffffff;
+    text-align: left;
+
+}
+
+.accomplishText {
+    color: #ffffff;
+    text-align: left;
+}
+
+    .accomplishText > ul {
+        margin-left: 0px;
+        margin-top: 0px;
+        list-style: square;
+    }
+    .accomplishText > ul > li {
+        margin-top: 5px;
+    }
+
+/***************/
+/* Grid Styles */
+/***************/
+.grid-container {
+    display: grid;
+    grid-column-gap: 3px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+    .grid-container > div {
+        padding: 5px;
+    }
+
+.grid-story {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid-media {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid-feature {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-accomplish {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/****************/
+/* Header Styles*/
+/****************/
+header {
+    background: #bd3232;
+}
+
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+/*************************/
+/* Navigation Bar Styles */
+/*************************/
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-left: 25px;
+        padding-top: 25px;
+        position: relative;
+    }
+
+    nav a {
+        color: #222222;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+        nav a:hover {
+            color: #000000
+        }
+
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #222222;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a::after {
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #222222;
+            position: absolute;
+            width: 0%;
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+            background-color: #000000;
+        }
+
+/*******************/
+/* Slideshow Style */
+/*******************/
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100vw - 60px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1 {
+    display: none;
+}
+/* Hide the images by default */
+.mySlides2 {
+    display: none;
+}
+/* Hide the images by default */
+.mySlides3 {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: -30px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+    left: -30px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Large next & previous buttons */
+.prevLarge, .nextLarge {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "Large next button" to the right */
+.nextLarge {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "Large previous button" to the left */
+.prevLarge {
+    left: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prevLarge:hover, .nextLarge:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 15px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
