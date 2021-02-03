@@ -26,323 +26,410 @@
         </header>
 
         <div class="grid-media">
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
+            <!-- BigInteger -->
+            <div class="projectContainer" align="center">
+                <!-- The name -->
+                <div class="titleText">Big Integer (Lua) </div>
 
-                <!-- BigInteger Slide -->
-                <div class="mySlides4 fade">
-                    <!-- BigInteger -->
-                    <div class="projectContainer" align="center">
-                        <!-- The name -->
-                        <div class="titleText">Big Integer (Lua) </div>
+                <!-- The Grid -->
+                <div class="grid-container">
+                    <!-- The story -->
+                    <div class="grid-story">
+                        <div class="subTitleText">The Story</div>
+                        <div class="storyText">
+                            During my Introduction to Cryptography course, my professor gave the class the freedom to use the programming language of their choice for the homework assignments.
+                            I used this opportunity to learn a new language: <a href="https://en.wikipedia.org/wiki/Lua_(programming_language)" target="_blank">Lua</a>. While this was an exciting challenge at the start, it quickly became a problem when we started working
+                            with numbers too large to fit in the primitive data types. Most languages have a way of overcoming this problem. For example, Java allows users to declare
+                            BigInteger types and Python automatically converts numbers to BigIntegers once they are too large. However, Lua has no native support for any such feature. So, I
+                            took it upon myself to create an entirely new data type for Lua, ensuring that every operation possible in Java would be possible in Lua. After typing over 1000
+                            lines of math-intensive code, I was finally able to complete my homework assignments for my Cryptography class using Lua.
+                        </div>
+                    </div>
 
-                        <!-- The Grid -->
-                        <div class="grid-container">
-                            <!-- The story -->
-                            <div class="grid-story">
-                                <div class="subTitleText">The Story</div>
-                                <div class="storyText">
-                                    During my Introduction to Cryptography course, my professor gave the class the freedom to use the programming language of their choice for the homework assignments.
-                                    I used this opportunity to learn a new language: <a href="https://en.wikipedia.org/wiki/Lua_(programming_language)" target="_blank">Lua</a>. While this was an exciting challenge at the start, it quickly became a problem when we started working
-                                    with numbers too large to fit in the primitive data types. Most languages have a way of overcoming this problem. For example, Java allows users to declare
-                                    BigInteger types and Python automatically converts numbers to BigIntegers once they are too large. However, Lua has no native support for any such feature. So, I
-                                    took it upon myself to create an entirely new data type for Lua, ensuring that every operation possible in Java would be possible in Lua. After typing over 1000
-                                    lines of math-intensive code, I was finally able to complete my homework assignments for my Cryptography class using Lua.
+                    <!-- The media -->
+                    <div class="grid-media">
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
+
+                            <!-- RSA Example -->
+                            <div class="mySlides1 fade">
+                                <a href="../img/BigInteger/RSA.png" target="_blank">
+                                    <img src="../img/BigInteger/RSA.png" style="width:650px; height: 650px">
+                                </a>
+                                <div class="text">
+                                    The RSA algorithim being used to share the private key "m."
+                                    Completed using the custom BigInteger datatype, and presented using <a href="https://love2d.org" target="_blank">LÖVE</a>.
+                                    Numbers p and q were found using the Miller-Rabin primality test, built into the BigInteger source code.
                                 </div>
                             </div>
 
-                            <!-- The media -->
-                            <div class="grid-media">
-                                <!-- Slideshow container -->
-                                <div class="slideshow-container">
-
-                                    <!-- RSA Example -->
-                                    <div class="mySlides1 fade">
-                                        <a href="../img/BigInteger/RSA.png" target="_blank">
-                                            <img src="../img/BigInteger/RSA.png" style="width:650px; height: 650px">
-                                        </a>
-                                        <div class="text">
-                                            The RSA algorithim being used to share the private key "m."
-                                            Completed using the custom BigInteger datatype, and presented using <a href="https://love2d.org" target="_blank">LÖVE</a>.
-                                            Numbers p and q were found using the Miller-Rabin primality test, built into the BigInteger source code.
-                                        </div>
-                                    </div>
-
-                                    <!-- Demo Example -->
-                                    <div class="mySlides1 fade">
-                                        <a href="../img/BigInteger/Demo.png" target="_blank">
-                                            <img src="../img/BigInteger/Demo.png" style="width:650px; height: 650px">
-                                        </a>
-                                        <div class="text">
-                                            A demonstration of all possible operations for a BigInteger.
-                                            All numbers used are too large for primitve data types, but my custom data type completed
-                                            all operations in 1.77 seconds.
-                                            Click the image to open a larger version.
-                                        </div>
-                                    </div>
-
-                                    <!-- Next and previous buttons -->
-                                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                                </div>
-                                <br /><br /><br />
-
-                                <!-- The dots/circles -->
-                                <div style="text-align:center">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
+                            <!-- Demo Example -->
+                            <div class="mySlides1 fade">
+                                <a href="../img/BigInteger/Demo.png" target="_blank">
+                                    <img src="../img/BigInteger/Demo.png" style="width:650px; height: 650px">
+                                </a>
+                                <div class="text">
+                                    A demonstration of all possible operations for a BigInteger.
+                                    All numbers used are too large for primitve data types, but my custom data type completed
+                                    all operations in 1.77 seconds.
+                                    Click the image to open a larger version.
                                 </div>
                             </div>
 
-                            <!-- The features -->
-                            <div class="grid-feature">
-                                <div class="subTitleText">Features</div>
-                                <div class="accomplishText">
-                                    <ul>
-                                        <li>Store integers of any size with exact precision.</li>
-                                        <li>Speed comprabable to primitve data types for most numbers.</li>
-                                        <li>Perform basic operations, such as subtraction and division.</li>
-                                        <li>Perform advanced operations, such as performing a primality test.</li>
-                                        <li>Perform bitwise operations.</li>
-                                        <li>Work in number bases up to 36, including binary and hexadecimal.</li>
-                                        <li>A syntax nearly identical to what is found in Java.</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                        </div>
+                        <br /><br /><br />
 
-                            <!-- The accompishments -->
-                            <div class="grid-accomplish">
-                                <div class="subTitleText">Accomplishments</div>
-                                <div class="accomplishText">
-                                    <ul>
-                                        <li>Created a solution that others have used in their projects, getting my code from <a href="https://github.com/A-Benlolo/BigInteger.lua" target="_blank">GitHub</a>.</li>
-                                        <li>Quickly learned the nuances of a new language in order to complete my goal.</li>
-                                        <li>Applied arithmetic shortcuts to achieve speeds faster than the intuitive solution has to offer.</li>
-                                        <li>Allowed for cryptographic algorithims requiring large prime numbers.</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <!-- The features -->
+                    <div class="grid-feature">
+                        <div class="subTitleText">Features</div>
+                        <div class="accomplishText">
+                            <ul>
+                                <li>Store integers of any size with exact precision.</li>
+                                <li>Speed comprabable to primitve data types for most numbers.</li>
+                                <li>Perform basic operations, such as subtraction and division.</li>
+                                <li>Perform advanced operations, such as performing a primality test.</li>
+                                <li>Perform bitwise operations.</li>
+                                <li>Work in number bases up to 36, including binary and hexadecimal.</li>
+                                <li>A syntax nearly identical to what is found in Java.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- The accompishments -->
+                    <div class="grid-accomplish">
+                        <div class="subTitleText">Accomplishments</div>
+                        <div class="accomplishText">
+                            <ul>
+                                <li>Created a solution that others have used in their projects, getting my code from <a href="https://github.com/A-Benlolo/BigInteger.lua" target="_blank">GitHub</a>.</li>
+                                <li>Quickly learned the nuances of a new language in order to complete my goal.</li>
+                                <li>Applied arithmetic shortcuts to achieve speeds faster than the intuitive solution has to offer.</li>
+                                <li>Allowed for cryptographic algorithims requiring large prime numbers.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <!-- Minesweeper Slide -->
-                <div class="mySlides4 fade">
-                    <!-- Minesweeper -->
-                    <div class="projectContainer" align="center">
-                        <!-- The name -->
-                        <div class="titleText">Hieroglyphic Minesweeper (Java)</div>
-
-                        <!-- The Grid -->
-                        <div class="grid-container">
-                            <!-- The story -->
-                            <div class="grid-story">
-                                <div class="subTitleText">The Story</div>
-                                <div class="storyText">
-                                    Over the summer of 2020, during the COVID-19 pandemic, a friend from college challenged
-                                    me to do the 100 days of code challenge. The gist of the challenge was to code for one
-                                    hour a day, 100 days in a row. Considering the fact that I was quarantined at home, I accepted
-                                    the challenge. I used this time to complete some abandonded projects. Among those projects, was
-                                    a varient of the videogame Minesweeper, where the numbers are replaced by randomized symbols.
-                                    I originally was going to make the final product text-based, but that was not a user friendly
-                                    solution. So, I went for the GUI (Graphical User Interface) approach instead. I had a fully playable
-                                    game in only a couple of days, but I decided to go above my original plans by adding many features
-                                    that I found lacking from the original Minesweeper. This was entertaining to code, and the end
-                                    result provided me with a form of entertainment.
-                                </div>
-                            </div>
-
-                            <!-- The media -->
-                            <div class="grid-media">
-                                <!-- Slideshow container -->
-                                <div class="slideshow-container">
-
-                                    <!-- Some examples of customization -->
-                                    <div class="mySlides2 fade">
-                                        <a href="../img/Minesweeper/custom.png" target="_blank">
-                                            <img src="../img/Minesweeper/custom.png" style="width:650px; height: 650px">
-                                        </a>
-                                        <div class="text">
-                                            A showcase of different display schemes. The top row consists
-                                            of preset colors. The middle row are colors made from the
-                                            random color option, which can make 4.72E+21 different color combinations.
-                                            (That's 4.72 sextillion!)
-                                        </div>
-                                    </div>
-
-                                    <!-- The field -->
-                                    <div class="mySlides2 fade">
-                                        <a href="../img/Minesweeper/field.png" target="_blank">
-                                            <img src="../img/Minesweeper/field.png" style="width:650px; height: 650px">
-                                        </a>
-                                        <div class="text">
-                                            A minefield set to the hard difficulty. I cheated by using the
-                                            "Reveal Blank Tile" action several times in order to get a nice
-                                            looking screenshot.
-                                        </div>
-                                    </div>
-
-                                    <!-- The pop up screens -->
-                                    <div class="mySlides2 fade">
-                                        <a href="../img/Minesweeper/popUpScreens.png" target="_blank">
-                                            <img src="../img/Minesweeper/popUpScreens.png" style="width:650px; height: 650px">
-                                        </a>
-                                        <div class="text">
-                                            Three interactable popup screens for different situations.
-                                            The two on the left are for losing or winning a game. The
-                                            two on the right is how the user is able to customize the field.
-                                        </div>
-                                    </div>
-
-                                    <!-- Next and previous buttons -->
-                                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-                                </div>
-                                <br /><br /><br />
-
-                                <!-- The dots/circles -->
-                                <div style="text-align:center">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                </div>
-                            </div>
-
-                            <!-- The features -->
-                            <div class="grid-feature">
-                                <div class="subTitleText">Features</div>
-                                <div class="accomplishText">
-                                    <ul>
-                                        <li>Customize the unrevealed tile, revealed tile, and text colors.</li>
-                                        <li>Toggle between icons and numbers for varying difficulty.</li>
-                                        <li>Create field sizes of up to 40x40 tiles, with any amount of mines.</li>
-                                        <li>An option to reveal a blank tile, making the first/worst move of the game more tolerable.</li>
-                                        <li>A summary page at the end of each field, noting details such as how much of the field was cleared.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- The accompishments -->
-                            <div class="grid-accomplish">
-                                <div class="subTitleText">Accomplishments</div>
-                                <div class="accomplishText">
-                                    <ul>
-                                        <li>Became very comfortable with GUI coding in Java.</li>
-                                        <li>Provided dozens of people with a new challenge in their favorite game.</li>
-                                        <li>Discovered new optimizations for previous code I have written.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Password Manager Slide -->
-                <div class="mySlides4 fade">
-                    <!-- Password Manager -->
-                    <div class="projectContainer" align="center">
-                        <!-- The name -->
-                        <div class="titleText">Password Manager (Java)</div>
-
-                        <!-- The Grid-->
-                        <div class="grid-container">
-                            <!-- The story -->
-                            <div class="grid-story">
-                                <div class="subTitleText">The Story</div>
-                                <div class="storyText">
-                                    After the conclusion of my first year at Towson University, I took on the rather ambitious
-                                    task of creating a password manager. At the time, I had a basic understand of Java and figured
-                                    that whatever I made would be good enough. However, looking back, I made many severe mistakes:
-                                    I stored the master password as plaintext in the code, used a substitution cipher instead
-                                    of a modern encryption algorithim, and made no effort to make the program user friendly.
-                                    So, two years later, I revisited the idea of a password manager, aiming to correct my previous
-                                    shortcomings. The one you are seeing on this website uses the Advanced Encryption
-                                    Algorithim (<a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_blank">AES</a>), which is currently the most secure symmetric encryption algorithim. Additionally, the
-                                    master password acts as a key to unencrypt a file that contains the passwords. This means
-                                    that the master password is not stored in the code, because the user can set it to be whatever
-                                    they want. Lastly, managing the passwords is easily done with the four built in functions:
-                                    search, add, remove, and modify. While working on this project for a second time, it was easy to
-                                    notice the growth in my understanding of coding, which made for a satisfying time.
-                                </div>
-                            </div>
-
-                            <!-- The media -->
-                            <div class="grid-media">
-                                <!-- Slideshow container -->
-                                <div class="slideshow-container">
-                                    <!-- Some example -->
-                                    <div class="mySlides3 fade">
-                                        <img src="../img/passLolo/mainScreen.png" style="width:650px; height: 650px">
-                                        <div class="text">
-                                            The main screen of the password manager.
-                                            Left clicking a row reveals the password and populates the remove and modify fields.
-                                            Right clicking a row copies the password to the user's clipboard.
-                                        </div>
-                                    </div>
-
-                                    <!-- Some other example -->
-                                    <div class="mySlides3 fade">
-                                        <img src="../img/passLolo/updateScreens.png" style="width:650px; height: 650px">
-                                        <div class="text">
-                                            An example of how to manipulate the table of credentials.
-                                            There is a function for the user to remove many entries at once or to modify a single entry,
-                                            as well as a confirmation that notifies the user how many entries are going to be affected.
-                                        </div>
-                                    </div>
-
-                                    <!-- The last example -->
-                                    <div class="mySlides3 fade">
-                                        <img src="../img/passLolo/vaultFile.png" style="width:650px; height: 650px">
-                                        <div class="text">The previously seen table translated into an encrypted file.</div>
-                                    </div>
-
-                                    <!-- Next and previous buttons -->
-                                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-                                </div>
-                                <br /><br /><br />
-
-                                <!-- The dots/circles -->
-                                <div style="text-align:center">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                </div>
-                            </div>
-
-                            <!-- The features -->
-                            <div class="grid-feature">
-                                <div class="subTitleText">Features</div>
-                                <div class="accomplishText">
-                                    <ul>
-                                        <li>Powerful encrpytion: <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_blank">AES</a> in <a href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_block_chaining_(CBC)" target="_blank">CBC</a> mode using <a href="https://en.wikipedia.org/wiki/PKCS" target="_blank">PKCS5</a> padding.</li>
-                                        <li>Easily make changes to your passwords using the on screen functions.</li>
-                                        <li>Quickly copy any password by right clicking on its row.</li>
-                                        <li>Save multiple encrypted files locked with different master passwords, allowing for use by more than one person.</li>
-                                        <li>Generate secure passwords with a click of a button.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- The accompishments -->
-                            <div class="grid-accomplish">
-                                <div class="subTitleText">Accomplishments</div>
-                                <div class="accomplishText">
-                                    <ul>
-                                        <li>Successfully encrypted and decrypted a file using modern algorithims.</li>
-                                        <li>Validated user input to prevent malicious attacks while entering the master password.</li>
-                                        <li>Implemented a simple and easy to understand user interface.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Next and previous buttons -->
-                <a class="prevLarge" onclick="plusSlides(-1, 3)">&#10094;</a>
-                <a class="nextLarge" onclick="plusSlides(1, 3)">&#10095;</a>
             </div>
+
+            <br/> <br/> <br/>
+
+            <!-- Minesweeper -->
+            <div class="projectContainer" align="center">
+                <!-- The name -->
+                <div class="titleText">Hieroglyphic Minesweeper (Java)</div>
+
+                <!-- The Grid -->
+                <div class="grid-container">
+                    <!-- The story -->
+                    <div class="grid-story">
+                        <div class="subTitleText">The Story</div>
+                        <div class="storyText">
+                            Over the summer of 2020, during the COVID-19 pandemic, a friend from college challenged
+                            me to do the 100 days of code challenge. The gist of the challenge was to code for one
+                            hour a day, 100 days in a row. Considering the fact that I was quarantined at home, I accepted
+                            the challenge. I used this time to complete some abandonded projects. Among those projects, was
+                            a varient of the videogame Minesweeper, where the numbers are replaced by randomized symbols.
+                            I originally was going to make the final product text-based, but that was not a user friendly
+                            solution. So, I went for the GUI (Graphical User Interface) approach instead. I had a fully playable
+                            game in only a couple of days, but I decided to go above my original plans by adding many features
+                            that I found lacking from the original Minesweeper. This was entertaining to code, and the end
+                            result provided me with a form of entertainment.
+                        </div>
+                    </div>
+
+                    <!-- The media -->
+                    <div class="grid-media">
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
+
+                            <!-- Some examples of customization -->
+                            <div class="mySlides2 fade">
+                                <a href="../img/Minesweeper/custom.png" target="_blank">
+                                    <img src="../img/Minesweeper/custom.png" style="width:650px; height: 650px">
+                                </a>
+                                <div class="text">
+                                    A showcase of different display schemes. The top row consists
+                                    of preset colors. The middle row are colors made from the
+                                    random color option, which can make 4.72E+21 different color combinations.
+                                    (That's 4.72 sextillion!)
+                                </div>
+                            </div>
+
+                            <!-- The field -->
+                            <div class="mySlides2 fade">
+                                <a href="../img/Minesweeper/field.png" target="_blank">
+                                    <img src="../img/Minesweeper/field.png" style="width:650px; height: 650px">
+                                </a>
+                                <div class="text">
+                                    A minefield set to the hard difficulty. I cheated by using the
+                                    "Reveal Blank Tile" action several times in order to get a nice
+                                    looking screenshot.
+                                </div>
+                            </div>
+
+                            <!-- The pop up screens -->
+                            <div class="mySlides2 fade">
+                                <a href="../img/Minesweeper/popUpScreens.png" target="_blank">
+                                    <img src="../img/Minesweeper/popUpScreens.png" style="width:650px; height: 650px">
+                                </a>
+                                <div class="text">
+                                    Three interactable popup screens for different situations.
+                                    The two on the left are for losing or winning a game. The
+                                    two on the right is how the user is able to customize the field.
+                                </div>
+                            </div>
+
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                        </div>
+                        <br /><br /><br />
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <!-- The features -->
+                    <div class="grid-feature">
+                        <div class="subTitleText">Features</div>
+                        <div class="accomplishText">
+                            <ul>
+                                <li>Customize the unrevealed tile, revealed tile, and text colors.</li>
+                                <li>Toggle between icons and numbers for varying difficulty.</li>
+                                <li>Create field sizes of up to 40x40 tiles, with any amount of mines.</li>
+                                <li>An option to reveal a blank tile, making the first/worst move of the game more tolerable.</li>
+                                <li>A summary page at the end of each field, noting details such as how much of the field was cleared.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- The accompishments -->
+                    <div class="grid-accomplish">
+                        <div class="subTitleText">Accomplishments</div>
+                        <div class="accomplishText">
+                            <ul>
+                                <li>Became very comfortable with GUI coding in Java.</li>
+                                <li>Provided dozens of people with a new challenge in their favorite game.</li>
+                                <li>Discovered new optimizations for previous code I have written.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br/> <br/> <br/>
+
+            <!-- Password Manager -->
+            <div class="projectContainer" align="center">
+                <!-- The name -->
+                <div class="titleText">Password Manager (Java)</div>
+
+                <!-- The Grid-->
+                <div class="grid-container">
+                    <!-- The story -->
+                    <div class="grid-story">
+                        <div class="subTitleText">The Story</div>
+                        <div class="storyText">
+                            After the conclusion of my first year at Towson University, I took on the rather ambitious
+                            task of creating a password manager. At the time, I had a basic understand of Java and figured
+                            that whatever I made would suffice. However, looking back, I made many severe mistakes:
+                            I stored the master password as plaintext in the code, used a substitution cipher instead
+                            of a modern encryption algorithim, and made no effort to make the program user friendly.
+                            So, two years later, I revisited the idea of a password manager, aiming to correct my previous
+                            shortcomings. The one you are seeing on this website uses the Advanced Encryption
+                            Algorithim (<a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_blank">AES</a>), which is currently the most secure symmetric encryption algorithim. Additionally, the
+                            master password acts as a key to unencrypt a file that contains the passwords. This means
+                            that the master password is not stored in the code, because the user can set it to be whatever
+                            they want. Lastly, managing the passwords is easily done with the four built in functions:
+                            search, add, remove, and modify. While working on this project for a second time, it was easy to
+                            notice the growth in my understanding of coding, which made for a satisfying time.
+                        </div>
+                    </div>
+
+                    <!-- The media -->
+                    <div class="grid-media">
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
+                            <!-- Some example -->
+                            <div class="mySlides3 fade">
+                                <img src="../img/passLolo/mainScreen.png" style="width:650px; height: 650px">
+                                <div class="text">
+                                    The main screen of the password manager.
+                                    Left clicking a row reveals the password and populates the remove and modify fields.
+                                    Right clicking a row copies the password to the user's clipboard.
+                                </div>
+                            </div>
+
+                            <!-- Some other example -->
+                            <div class="mySlides3 fade">
+                                <img src="../img/passLolo/updateScreens.png" style="width:650px; height: 650px">
+                                <div class="text">
+                                    An example of how to manipulate the table of credentials.
+                                    There is a function for the user to remove many entries at once or to modify a single entry,
+                                    as well as a confirmation that notifies the user how many entries are going to be affected.
+                                </div>
+                            </div>
+
+                            <!-- The last example -->
+                            <div class="mySlides3 fade">
+                                <img src="../img/passLolo/vaultFile.png" style="width:650px; height: 650px">
+                                <div class="text">The previously seen table translated into an encrypted file.</div>
+                            </div>
+
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                        </div>
+                        <br /><br /><br />
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <!-- The features -->
+                    <div class="grid-feature">
+                        <div class="subTitleText">Features</div>
+                        <div class="accomplishText">
+                            <ul>
+                                <li>Powerful encrpytion: <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_blank">AES</a> in <a href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_block_chaining_(CBC)" target="_blank">CBC</a> mode using <a href="https://en.wikipedia.org/wiki/PKCS" target="_blank">PKCS5</a> padding.</li>
+                                <li>Easily make changes to your passwords using the on screen functions.</li>
+                                <li>Quickly copy any password by right clicking on its row.</li>
+                                <li>Save multiple encrypted files locked with different master passwords, allowing for use by more than one person.</li>
+                                <li>Generate secure passwords with a click of a button.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- The accompishments -->
+                    <div class="grid-accomplish">
+                        <div class="subTitleText">Accomplishments</div>
+                        <div class="accomplishText">
+                            <ul>
+                                <li>Successfully encrypted and decrypted a file using modern algorithims.</li>
+                                <li>Validated user input to prevent malicious attacks while entering the master password.</li>
+                                <li>Implemented a simple and easy to understand user interface.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br/> <br/> <br/>
+
+            <!-- Zoomer2Boomer -->
+            <div class="projectContainer" align="center">
+                <!-- The name -->
+                <div class="titleText">Slang Translator (JavaScript)</div>
+
+                <!-- The Grid -->
+                <div class="grid-container">
+                    <!-- The story -->
+                    <div class="grid-story">
+                        <div class="subTitleText">The Story</div>
+                        <div class="storyText">
+                            During the fall of 2020, I was enrolled in a software development course at Towson
+                            University. This course required a term project with the following requirements:
+                            it must be a deployable website, include some API with machine learning, make use
+                            of a database, and solve some problem. An idea that I thought up, and that my team of five ultimately decided to
+                            use, was a slang translator. Since I was a fourth year student at the time of taking this course,
+                            and my team members were second year students, I was responsible for nearly every coding
+                            aspect of the project. This included setting up a MySQL database for the dictionary, connecting
+                            the database to the website with javascript, parsing natural language to obtain new translations
+                            on the fly, a text to speech feature, and a sentence completion feature. Desipte doing nearly all
+                            of the coding, the team dynamic worked out in our favor. The remaining members of the team
+                            worked on documentation and keeping track of our goals for each sprint.
+                        </div>
+                    </div>
+
+                    <!-- The media -->
+                    <div class="grid-media">
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
+
+                            <!-- An example translation -->
+                            <div class="mySlides4 fade">
+                                <a href="../img/Zoomer2Boomer/Example.png" target="_blank">
+                                    <img src="../img/Zoomer2Boomer/Example.png" style="width:650px; height: 650px">
+                                </a>
+                                <div class="text">
+                                    An example of a translation done by our website. You are able to
+                                    click on the picture to open it in a new tab and zoom in to see
+                                    more clearly.
+                                </div>
+                            </div>
+
+                            <!-- Autocomplete in action -->
+                            <div class="mySlides4 fade">
+                                <a href="../img/Zoomer2Boomer/AutoComplete.png" target="_blank">
+                                    <img src="../img/Zoomer2Boomer/AutoComplete.png" style="width:650px; height: 650px">
+                                </a>
+                                <div class="text">
+                                    While the user is typing a slang sentence, there will be autocompletetion
+                                    suggestions. Pressing Tab allows the word to be auto filled.
+                                </div>
+                            </div>
+
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                        </div>
+                        <br /><br /><br />
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <!-- The features -->
+                    <div class="grid-feature">
+                        <div class="subTitleText">Features</div>
+                        <div class="accomplishText">
+                            <ul>
+                                <li>Translation of a slang word by using an SQL dictionary.</li>
+                                <li>Translation of a slang word by scraping internet search results.</li>
+                                <li>A customizable text to speach that will read the slang sentence.</li>
+                                <li>Suggestive word completion while a sentence is being type.</li>
+                                <li>A random slang word for when you're using the translator just for fun.</li>
+                                <li>A Towson University themed color scheme.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- The accompishments -->
+                    <div class="grid-accomplish">
+                        <div class="subTitleText">Accomplishments</div>
+                        <div class="accomplishText">
+                            <ul>
+                                <li>Became famliar with <a href="https://en.wikipedia.org/wiki/Agile_software_development" target="_blank">agile software development</a>.</li>
+                                <li>Learned a considerable amount of JavaScript's many nuances.</li>
+                                <li>Provided a way of translating an unfamiliar slang word within a sentence.</li>
+                                <li>Parsed natural language to automatically obtain new translations from internet search results.</li>
+                                <li>Created a comprehensize <a href="https://github.com/A-Benlolo/Zoomer2Boomer" target="_blank">GitHub</a> page for anyone interested in hosting the website.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- Load the Javascript stuff -->
         <script src="../js/slideshowMultiple.js"></script>
